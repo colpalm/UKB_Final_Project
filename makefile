@@ -1,6 +1,8 @@
 # Makefile for Unix Work Bench Final Project
 
+define NEWLINE
 
+endef
 
 README.md: guessinggame.sh
 	# Variables
@@ -9,7 +11,7 @@ README.md: guessinggame.sh
 	
 	echo "# The Unix Workbech Week 4 Project: Bash, Make Git and Github" > README.md
 	echo "File Created: $(date_created)" >> README.md
-	@echo
+	echo $(NEWLINE) >> README.md
 	echo "Number of lines in guessinggame.sh: $(number_files)" >> README.md
 
 clean:
