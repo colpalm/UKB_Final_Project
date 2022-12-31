@@ -9,6 +9,7 @@ README.md: guessinggame.sh
 	
 	echo "# The Unix Workbech Week 4 Project: Bash, Make Git and Github" > README.md
 	echo "File Created: $(date_created)" >> README.md
+	@echo
 	echo "Number of lines in guessinggame.sh: $(number_files)" >> README.md
 
 clean:
